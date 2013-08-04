@@ -60,34 +60,34 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="404.html" />
-    <Content Include="apple-touch-icon-114x114-precomposed.png" />
-    <Content Include="apple-touch-icon-144x144-precomposed.png" />
-    <Content Include="apple-touch-icon-57x57-precomposed.png" />
-    <Content Include="apple-touch-icon-72x72-precomposed.png" />
-    <Content Include="apple-touch-icon-precomposed.png" />
-    <Content Include="apple-touch-icon.png" />
-    <Content Include="crossdomain.xml" />
-    <Content Include="css\bootstrap-responsive.css" />
-    <Content Include="css\bootstrap-responsive.min.css" />
-    <Content Include="css\bootstrap.css" />
-    <Content Include="css\bootstrap.min.css" />
-    <Content Include="css\main.css" />
-    <Content Include="favicon.ico" />
-    <Content Include="humans.txt" />
-    <Content Include="img\glyphicons-halflings-white.png" />
-    <Content Include="img\glyphicons-halflings.png" />
-    <Content Include="index.html" />
-    <Content Include="js\main.js" />
-    <Content Include="js\plugins.js" />
-    <Content Include="js\vendor\bootstrap.js" />
-    <Content Include="js\vendor\bootstrap.min.js" />
-    <Content Include="js\vendor\jquery-1.10.1.min.js" />
-    <Content Include="js\vendor\modernizr-2.6.2-respond-1.1.0.min.js" />
-    <Content Include="robots.txt" />
+    <Content Include="public_html\404.html" />
+    <Content Include="public_html\apple-touch-icon-114x114-precomposed.png" />
+    <Content Include="public_html\apple-touch-icon-144x144-precomposed.png" />
+    <Content Include="public_html\apple-touch-icon-57x57-precomposed.png" />
+    <Content Include="public_html\apple-touch-icon-72x72-precomposed.png" />
+    <Content Include="public_html\apple-touch-icon-precomposed.png" />
+    <Content Include="public_html\apple-touch-icon.png" />
+    <Content Include="public_html\crossdomain.xml" />
+    <Content Include="public_html\css\bootstrap-responsive.css" />
+    <Content Include="public_html\css\bootstrap-responsive.min.css" />
+    <Content Include="public_html\css\bootstrap.css" />
+    <Content Include="public_html\css\bootstrap.min.css" />
+    <Content Include="public_html\css\main.css" />
+    <Content Include="public_html\favicon.ico" />
+    <Content Include="public_html\humans.txt" />
+    <Content Include="public_html\img\glyphicons-halflings-white.png" />
+    <Content Include="public_html\img\glyphicons-halflings.png" />
+    <Content Include="public_html\index.html" />
+    <Content Include="public_html\js\main.js" />
+    <Content Include="public_html\js\plugins.js" />
+    <Content Include="public_html\js\vendor\bootstrap.js" />
+    <Content Include="public_html\js\vendor\bootstrap.min.js" />
+    <Content Include="public_html\js\vendor\jquery-1.10.1.min.js" />
+    <Content Include="public_html\js\vendor\modernizr-2.6.2-respond-1.1.0.min.js" />
+    <Content Include="public_html\robots.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".htaccess" />
+    <Content Include="public_html\.htaccess" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -102,7 +102,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>52611</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:52108/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
