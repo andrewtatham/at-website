@@ -55,72 +55,80 @@
         <!-- Main hero unit for a primary marketing message or call to action -->
         <div class="hero-unit">
             <h1>Hello, world!</h1>
-            <p>My name is <span class="author">Andrew Tatham</span>. I'm a software developer, in Leeds. I work for <a href="http://www.bjss.co.uk/">BJSS</a>.</p>
+            <p class="lead">My name is <span class="author">Andrew Tatham</span>.</p>
+            <p>I'm a .NET software developer. I work for <a href="http://www.bjss.co.uk/">BJSS</a>. I live in Leeds.</p>
         </div>
 
         <hr>
 
         <div class="row">
-            <div class="span6">
-                <h2>My Specialities.</h2>
-                <p>I specialise in modern software practices including...</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="span4">
-                <h3>Unit Testing</h3>
-                <p>Testing individual components</p>
-            </div>
-            <div class="span4">
-                <h3>Integration/Dependancy/Smoke testing</h3>
-                <p>Testing that all the components work together</p>
-            </div>
-            <div class="span4">
-                <h3>Continuous Testing</h3>
-                <p>Using a continuous test runner, like Mighty Moose or NCrunch to reduce the build/test feedback loop to a minimum.</p>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="span4">
-                <h3>Test-Driven Development</h3>
-                <p>"Red -> Green -> Refactor". Its not just about the tests, its about the quality of the design. The management of dependencies is key. Reducing the complexity of each component until it is simple.</p>
-            </div>
-            <div class="span4">
-                <h3>Behaviour Driven Development</h3>
-                <p>Creating an executable specification, using a tool like like Specflow, to validate the requirements</p>
-            </div>
-            <div class="span4">
-                <h3>Automated Acceptance Testing</h3>
-                <p>Validating the functionality using something like Selenium</p>
-            </div>
-        </div>
-
-
-
-        <div class="row">
-            <div class="span6">
-                <h3>Continuous Integration.</h3>
-                <p>Using a tool like Jenkins to...</p>
-                <ul>
-                    <li>build and test the system on every check-in.</li>
-                    <li>Measuring and reporting on quality metrics like code coverage and cyclomatic complexity.</li>
-                </ul>
-            </div>
-            <div class="span6">
-                <h3>Automated Deployment and Validation</h3>
-                <p>Deploying and validating the finished product with minimum friction.</p>
-            </div>
-
-        </div>
-
-        <hr>
-
-        <div class="row">
-
             <div class="span12">
+                <h2>My Specialities.</h2>
+                <p class="lead">I specialise in modern software practices including...</p>
+
+
+                <div class="row">
+                    <div class="span4">
+                        <h3>Unit Testing</h3>
+                        <p>Testing individual components to ensure they work as intended.</p>
+                    </div>
+                    <div class="span4">
+                        <h3>Integration Testing</h3>
+                        <p>Testing collectons of components that work together.</p>
+                    </div>
+                    <div class="span4">
+                        <h3>Continuous Testing</h3>
+                        <p>Using a continuous test runner, like Mighty Moose or NCrunch to reduce the build/test feedback loop to a minimum.</p>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="span4">
+                        <h3>Test-Driven Development</h3>
+                        <p>"Red -> Green -> Refactor". Its not just about the tests, its about the quality of the design.</p>
+                    </div>
+                    <div class="span4">
+                        <h3>Behaviour Driven Development</h3>
+                        <p>Creating an executable specification, using a tool like like Specflow, to validate the requirements</p>
+                    </div>
+                    <div class="span4">
+                        <h3>Automated Acceptance Testing</h3>
+                        <p>Validating the functionality using something like Selenium</p>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="span6">
+                        <h3>Continuous Integration.</h3>
+                        <p>Using a tool like Jenkins to...</p>
+                        <ul>
+                            <li>NAnt</li>
+                            <li>NUGet</li>
+                            <li>build and test the system on every check-in.</li>
+                            <li>Measuring  on quality metrics like code coverage and cyclomatic complexity.</li>
+                            <li>Measuring  on quality metrics like code coverage and cyclomatic complexity.</li>
+                            <li>OpenCover</li>
+                            <li>FxCop or Sonar</li>
+                            <li>Reporting</li>
+                        </ul>
+                    </div>
+                    <div class="span6">
+                        <h3>Automated Deployment and Validation</h3>
+                        <p>Deploying and validating the finished product with minimum friction.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="offset8">
+            </div>
+            <div class="span4">
                 <h2>Contact Me.</h2>
                 <p>Contact me using</p>
                 <p><a class="btn" rel="author" href="https://www.facebook.com/andrewtatham">Facebook &raquo;</a></p>
@@ -139,7 +147,7 @@
     </div>
     <!-- /container -->
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
     <script src="js/vendor/bootstrap.min.js"></script>
@@ -151,7 +159,7 @@
         var _gaq = [['_setAccount', 'UA-958058-1'], ['_trackPageview']];
         (function (d, t) {
             var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-            g.src = '//www.google-analytics.com/ga.js';
+            g.src = 'www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g, s)
         }(document, 'script'));
     </script>
