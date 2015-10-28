@@ -67,28 +67,22 @@
     <Content Include="public_html\apple-touch-icon-72x72-precomposed.png" />
     <Content Include="public_html\apple-touch-icon-precomposed.png" />
     <Content Include="public_html\apple-touch-icon.png" />
+    <Content Include="public_html\cover.html" />
     <Content Include="public_html\crossdomain.xml" />
-    <Content Include="public_html\css\bootstrap-responsive.css" />
-    <Content Include="public_html\css\bootstrap-responsive.min.css" />
-    <Content Include="public_html\css\bootstrap.css" />
-    <Content Include="public_html\css\bootstrap.min.css" />
-    <Content Include="public_html\css\main.css" />
     <Content Include="public_html\favicon.ico" />
     <Content Include="public_html\humans.txt" />
-    <Content Include="public_html\img\glyphicons-halflings-white.png" />
-    <Content Include="public_html\img\glyphicons-halflings.png" />
     <Content Include="public_html\index.html" />
-    <Content Include="public_html\js\main.js" />
-    <Content Include="public_html\js\plugins.js" />
-    <Content Include="public_html\js\vendor\bootstrap.js" />
-    <Content Include="public_html\js\vendor\bootstrap.min.js" />
-    <Content Include="public_html\js\vendor\jquery-1.10.1.min.js" />
-    <Content Include="public_html\js\vendor\modernizr-2.6.2-respond-1.1.0.min.js" />
+    <Content Include="public_html\index_old.html" />
+    <Content Include="public_html\node_modules\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="public_html\node_modules\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="public_html\node_modules\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="public_html\node_modules\bootstrap\dist\js\npm.js" />
     <Content Include="public_html\robots.txt" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="public_html\.htaccess" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
