@@ -1,0 +1,17 @@
+{
+  "name": "public_html",
+  "version": "1.0.0",
+  "description": "Andrew Tatham is a software developer from Leeds. This is his personal website.",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.5",
+    "bootswatch": "^3.3.5",
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Tatham",
+  "license": "ISC"
+}

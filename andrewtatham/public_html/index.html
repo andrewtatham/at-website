@@ -1,169 +1,138 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+﻿<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Andrew Tatham</title>
-    <meta name="description" content="Andrew Tatham, a software developer from Leeds.">
-    <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
+  <title>Anrew Tatham</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="node_modules/bootswatch/slate/bootstrap.min.css" rel="stylesheet" />
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+    <script src="../bower_components/respond/dest/respond.min.js"></script>
+  <![endif]-->
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-958058-1']);
+    _gaq.push(['_setDomainName', "bootswatch.com"]);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <style>
-        body {
-            padding-top: 60px;
-            padding-bottom: 40px;
-        }
-    </style>
-    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
 </head>
+
 <body>
-    <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-
-    <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
-
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-                <a class="brand" href="#">andrewtatham.com</a>
-                <div class="nav-collapse collapse">
-                    <ul class="nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-        <div class="hero-unit">
-            <h1>Hello, world!</h1>
-            <p>My name is <span class="author">Andrew Tatham</span>.</p>
-            <p>I'm a .NET software developer.</p>
-            <p>I work for <a href="http://www.bjss.co.uk/">BJSS</a>.</p>
-            <p>I live in Leeds.</p>
-        </div>
-
-
-
-        <h3>My Expertise...</h3>
-
-        <div class="row">
-            <div class="span4 ">
-                <div class="well well-small">
-                    <h4>Unit Testing</h4>
-                    <p>Testing individual components to ensure they work as intended.</p>
-                </div>
-
-            </div>
-            <div class="span4">
-                <div class="well well-small">
-                    <h4>Integration Testing</h4>
-                    <p>Testing groups of components to ensure they work together.</p>
-                </div>
-            </div>
-            <div class="span4">
-                <div class="well well-small">
-                    <h4>Continuous Testing</h4>
-                    <p>By using a continuous test runner, like <a href="http://continuoustests.com/">Mighty Moose</a> or <a href="http://www.ncrunch.net/">NCrunch</a> to get immediate feedback.</p>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="span4 ">
-                <div class="well well-small">
-                    <h4>Test-Driven Development</h4>
-                    <p>"Red -> Green -> Refactor". Its not just about the tests, its about the quality of the design.</p>
-                </div>
-            </div>
-            <div class="span4">
-                <div class="well well-small">
-                    <h4>Behaviour-Driven Development</h4>
-                    <p>Creating an executable specification, using a tool like like <a href="http://www.specflow.org/">Specflow</a>, to validate the requirements.</p>
-                </div>
-            </div>
-
-            <div class="span4">
-                <div class="well well-small">
-                    <h4>Automated Acceptance Testing</h4>
-                    <p>Validating the functionality using tools like <a href="http://docs.seleniumhq.org/">Selenium</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="span6">
-                <div class="well well-small">
-                    <h4>Continuous Integration.</h4>
-                    <p>Using a tool like <a href="http://jenkins-ci.org/">Jenkins</a> to...</p>
-                    <ul>
-                        <li>NAnt</li>
-                        <li>NUGet</li>
-                        <li>build and test the system on every check-in.</li>
-                        <li>Measuring on test quality metrics like code coverage.</li>
-                        <li>Measuring on code quality metrics like cyclomatic complexity.</li>
-                        <li>OpenCover</li>
-                        <li>FxCop or Sonar</li>
-                        <li>Reporting</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="span6">
-                <div class="well well-small">
-                    <h4>Automated Deployment and Validation</h4>
-                    <p>Deploying and validating the finished product with minimum friction.</p>
-                </div>
-            </div>
-
-        </div>
-        <hr />
-        <div class="row">
-            <div class="span12">
-                <h3>Contact Me</h3>
-                <div class="btn-group">
-                    <a class="btn" rel="me" href="https://www.facebook.com/andrewtatham">Facebook</a>
-                    <a class="btn" rel="me" href="https://twitter.com/andrewtatham">Twitter</a>
-                    <a class="btn" rel="me" href="https://plus.google.com/106580203311280649126">Google+</a>
-                    <a class="btn" rel="me" href="http://uk.linkedin.com/in/andrewtatham">LinkedIn</a>
-                </div>
-            </div>
-        </div>
-        <hr />
-
+      <div class="navbar-header">
+        <a href="http://andrewtatham.com" class="navbar-brand">Andrew Tatham</a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar-main">
+        <ul class="nav navbar-nav">
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://kaizensoftwareengineering.com/" target="_blank">Kaizen Software Engieering</a></li>
+        </ul>
+      </div>
     </div>
-    <!-- /container -->
+  </div>
 
-    <script src="ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+  <div class="container">
 
-    <script src="js/vendor/bootstrap.min.js"></script>
 
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <div class="row">
+      <div class="col-lg-12">
 
-    <script>
-        var _gaq = [['_setAccount', 'UA-958058-1'], ['_trackPageview']];
-        (function (d, t) {
-            var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-            g.src = 'www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g, s)
-        }(document, 'script'));
-    </script>
+        <div class="jumbotron">
+          <h1>Hello World.</h1>
+          <p>I should probably write something here.</p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-lg-12">
+        <p>My name is <span class="author">Andrew Tatham</span>.</p>
+        <p>I'm the director of <a href="http://kaizensoftwareengineering.com/">Kaizen Software Engineering</a>.</p>
+        <p>I'm a .NET software developer.</p>
+        <p>I live in Leeds.</p>
+        <p>I've worked for many financial institutions.</p>
+        <p>I love to solve problems with code.</p>
+        <p>I mostly write C#.NET. I've been dabbling with Python</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-header">
+          <h1>Personal Projects</h1>
+        </div>
+        <p>I have two raspberry pi's. They run a twitter bot python script. They are <a href="https://twitter.com/andrewtathampi">@andrewtathampi</a> and <a href="https://twitter.com/andrewtathampi2">@andrewtathampi2</a>. The source code is availiable on <a href="https://github.com/andrewtatham/twitterpibot">Github</a>.</p>
+        <p>I made a Robocode robot. The source code is availiable on <a href="https://andrewtathamrobocode.codeplex.com/">Codeplex</a>.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-header">
+          <h1>Personal Projects</h1>
+        </div>
+        <p>I have two raspberry pi's. They run a twitter bot python script. They are <a href="https://twitter.com/andrewtathampi">@andrewtathampi</a> and <a href="https://twitter.com/andrewtathampi2">@andrewtathampi2</a>. The source code is availiable on <a href="https://github.com/andrewtatham/twitterpibot">Github</a>.</p>
+        <p>I made a Robocode robot. The source code is availiable on <a href="https://andrewtathamrobocode.codeplex.com/">Codeplex</a>.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-header">
+          <h1 id="contact">Find me on...</h1>
+        </div>
+        <div class="col-lg-12">
+          <div class="btn-group">
+            <ul class="list-inline">
+              <li><a class="btn btn-primary" rel="me" href="http://uk.linkedin.com/in/andrewtatham">LinkedIn</a></li>
+              <li><a class="btn btn-primary" rel="me" href="https://www.facebook.com/andrewtatham">Facebook</a></li>
+              <li><a class="btn btn-primary" rel="me" href="https://twitter.com/andrewtatham">Twitter</a></li>
+              <li><a class="btn btn-primary" rel="me" href="https://plus.google.com/106580203311280649126">Google+</a></li>
+              <li><a class="btn btn-primary" rel="me" href="https://github.com/andrewtatham">Github</a></li>
+              <li><a class="btn btn-primary" rel="me" href="https://www.codeplex.com/site/users/view/andrewtatham">Codeplex</a></li>
+              <li><a class="btn btn-primary" rel="me" href="http://stackoverflow.com/users/352059/andrewtatham">Stack Overflow</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="col-lg-12">
+          <hr />
+          <ul class="list-inline">
+            <li class="pull-right"><a href="#top">Back to top</a></li>
+            <li>Based on <a href="http://getbootstrap.com/">Bootstrap</a> with the <a href="https://bootswatch.com/slate/">Slate</a>              template</li>
+          </ul>
+          <p></p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
