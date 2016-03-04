@@ -74,9 +74,10 @@
     <Content Include="public_html\index.html" />
     <Content Include="public_html\index_old.html" />
     <Content Include="public_html\node_modules\bootstrap\dist\css\bootstrap-theme.min.css" />
-    <Content Include="public_html\node_modules\bootstrap\dist\css\bootstrap.min.css" />
     <Content Include="public_html\node_modules\bootstrap\dist\js\bootstrap.min.js" />
     <Content Include="public_html\node_modules\bootstrap\dist\js\npm.js" />
+    <Content Include="public_html\node_modules\bootswatch\slate\bootstrap.min.css" />
+    <Content Include="public_html\node_modules\jquery\dist\jquery.min.js" />
     <Content Include="public_html\robots.txt" />
   </ItemGroup>
   <ItemGroup>

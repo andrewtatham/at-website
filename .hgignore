@@ -3,3 +3,5 @@ andrewtatham.v11.suo
 andrewtatham/andrewtatham.csproj.user
 */bin/*
 */obj/*
+\.vscode\launch.json
+andrewtatham/public_html/.vscode/
