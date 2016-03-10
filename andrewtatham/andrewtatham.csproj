@@ -70,8 +70,10 @@
     <Content Include="public_html\apple-touch-icon.png" />
     <Content Include="public_html\cover.html" />
     <Content Include="public_html\crossdomain.xml" />
+    <Content Include="public_html\css\custom.css" />
     <Content Include="public_html\favicon.ico" />
     <Content Include="public_html\humans.txt" />
+    <Content Include="public_html\images\numberwang.png" />
     <Content Include="public_html\index.html" />
     <Content Include="public_html\index_old.html" />
     <Content Include="public_html\node_modules\bootstrap\dist\css\bootstrap-theme.min.css" />
