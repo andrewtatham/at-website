@@ -5,3 +5,4 @@ andrewtatham/andrewtatham.csproj.user
 */obj/*
 \.vscode\launch.json
 andrewtatham/public_html/.vscode/
+andrewtatham/public_html/node_modules/
