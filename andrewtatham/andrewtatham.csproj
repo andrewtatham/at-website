@@ -76,6 +76,9 @@
     <Content Include="public_html\images\numberwang.png" />
     <Content Include="public_html\index.html" />
     <Content Include="public_html\index_old.html" />
+    <Content Include="public_html\js\app.js" />
+    <Content Include="public_html\node_modules\angular\angular.min.js" />
+    <Content Include="public_html\node_modules\angular\index.js" />
     <Content Include="public_html\node_modules\bootstrap\dist\css\bootstrap-theme.min.css" />
     <Content Include="public_html\node_modules\bootstrap\dist\css\bootstrap.min.css" />
     <Content Include="public_html\node_modules\bootstrap\dist\js\bootstrap.min.js" />
@@ -88,7 +91,18 @@
   <ItemGroup>
     <Content Include="public_html\.htaccess" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="public_html\package.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
