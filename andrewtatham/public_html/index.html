@@ -1,409 +1,170 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Andrew Tatham</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8">
+    <title>Andrew Tatham</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-KRJ6NNJ');</script>
-	<!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KRJ6NNJ');
+    </script>
+    <!-- End Google Tag Manager -->
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-		crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
-		crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-	<link href="node_modules/bootswatch/paper/bootstrap.min.css" rel="stylesheet" />
-	<link href="css/custom.css" rel="stylesheet" />
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-    <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
-    <script src="../bower_components/respond/dest/respond.min.js"></script>
-  <![endif]-->
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <link href="css/custom.css" rel="stylesheet" />
 
-	  ga('create', 'UA-958058-1', 'auto');
-	  ga('send', 'pageview');
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-	</script>
+        ga('create', 'UA-958058-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 </head>
 
 <body onload="onload()">
     <div class="navbar navbar-default">
-		<div class="container">
-			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Andrew Tatham</a>
-				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-			</div>
-			<div class="navbar-collapse collapse" id="navbar-main">
-				<ul class="nav navbar-nav">
-					<li><a href="#who">Who?</a></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Raspberry Pi Twitter Bots <span class="caret"></span> </a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="#andrewtathampi">
-									<img src="https://pbs.twimg.com/profile_images/546670098564382720/nbveAI_m_normal.jpeg"> @andrewtathampi
-								</a>
-							</li>
-							<li>
-								<a href="#andrewtathampi2">
-									<img src="https://pbs.twimg.com/profile_images/653161116714070016/pbtZZsuX_normal.jpg"> @andrewtathampi2
-								</a>
-							</li>
-							<li>
-								<a href="#numberwang">
-									<img src="https://pbs.twimg.com/profile_images/698487351123800065/lb9Cc8OS_normal.jpg"> @numberwang_host
-								</a>
-							</li>
-							<li>
-								<a href="#numberwang">
-									<img src="https://pbs.twimg.com/profile_images/699132320738103296/XM2coYXl_normal.jpg"> @JulieNumberwang
-								</a>
-							</li>
-							<li>
-								<a href="#numberwang">
-									<img src="https://pbs.twimg.com/profile_images/699133679805845504/oJx4BKsI_normal.jpg"> @SimonNumberwang
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="https://pbs.twimg.com/profile_images/706394624517087232/HRtn2ln6_normal.jpg"> @eggpunbot
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="https://pbs.twimg.com/profile_images/791560561406377985/Sc-sBrOw_normal.png"> @BotgleArtist
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="https://pbs.twimg.com/profile_images/708253854354247680/TzDVEK1Y_normal.jpg"> @WhenMensDay
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="https://pbs.twimg.com/profile_images/791780514411806721/J121e7Ta_normal.jpg"> @THEMACHINESCODE
-								</a>
-							</li>
-						</ul>
-					</li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="http://kaizensoftwareengineering.com/" target="_blank">Kaizen Software Engineering</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
+        <div class="container">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand">Andrew Tatham</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li><a href="#who">Who?</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://isandrewtathamavailable.com" target="_blank">Is Andrew Tatham Available?</a></li>
+                    <li><a href="http://kaizensoftwareengineering.com" target="_blank">Kaizen Software Engineering</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-	<!-- Google Tag Manager (noscript) -->
-	<noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
 	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRJ6NNJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 	</noscript>
-	<!-- End Google Tag Manager (noscript) -->
+    <!-- End Google Tag Manager (noscript) -->
 
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Hello World.</h1>
-			<p>I should probably write something here. Blah.</p>
-		</div>
-		<div class="page-header">
-			<h1 id="who">Who?</h1>
-		</div>
-		<div class="row">
-			<div class="col-md-5">
-		
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Hello World.</h1>
+            <p>I should probably write something here. Blah.</p>
+        </div>
+        <div class="page-header">
+            <h1 id="who">Who?</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
 
-					<p class="lead">
-						My name is <span class="author">Andrew Tatham</span>.
-					</p>
-					<p>
-						I'm the director of <a href="http://kaizensoftwareengineering.com/">Kaizen Software Engineering</a>.
-					</p>
-					<p>I'm a .NET software developer.</p>
-					<p>I live in Leeds.</p>
-					<p>I've worked for many financial institutions.</p>
-					<p>I love to solve problems with code.</p>
-					<p>I mostly write C#.NET. I've been dabbling with Python</p>
 
-		
-
-			</div>
-			<div class="col-md-4">
-				<p>I have a son called James. He is
-					<ul>
-						<li><span id="days"></span> days</li>
-						<li><span id="weeks"></span> weeks</li>
-						<li><span id="months"></span> months</li>
-						<li><span id="years"></span> years</li>
-					</ul>old.</p>
-			</div>
-
-			<div class="col-md-3">
-				<aside>
-					<p>If this is not the Andrew Tatham you are looking for, try...</p>
-					<ul>
-						<li>Andrew Tatham, Consultant Eye Surgeon: <a href="http://www.drtatham.com/">drtatham.com</a></li>
-						<li>Andrew Tatham, Artist and Historian: <a href="http://www.groupphoto.co.uk/">groupphoto.co.uk</a> and <a href="http://www.andrewtatham.org.uk/">andrewtatham.org.uk</a></li>
-					</ul>
-				</aside>
+                <p class="lead">
+                    My name is <span class="author">Andrew Tatham</span>.
+                </p>
+                <p>I'm the director of <a href="http://kaizensoftwareengineering.com" target="_blank">Kaizen Software Engineering</a>.</p>
+                <p>For my latest availability see <a href="http://isandrewtathamavailable.com" target="_blank">Is Andrew Tatham Available?</a>.</p>
+                <p>I'm a .NET software developer.</p>
+                <p>I live in Leeds.</p>
+                <p>I've worked for many financial institutions.</p>
+                <p>I love to solve problems with code.</p>
+                <p>I mostly write C#.NET. I've been dabbling with Python</p>
 
 
 
+            </div>
+            <div class="col-md-4">
+                <p>I have a son called James. He is
+                    <ul>
+                        <li><span id="days"></span> days</li>
+                        <li><span id="weeks"></span> weeks</li>
+                        <li><span id="months"></span> months</li>
+                        <li><span id="years"></span> years</li>
+                    </ul>old.</p>
+            </div>
 
-
-			</div>
-		</div>
-	
-		<div class="page-header">
-      <h1>
-        My Raspberry Pi's: <span id="andrewtathampi">@andrewtathampi</span> and <span id="andrewtathampi2">@andrewtathampi2</span>
-      </h1>
-		</div>
-		<p class="lead">
-			They get up to all sorts of crazy mischief on twitter...
-		</p>
-
-		<div class="row">
-			<div class="col-sm-4">
-				<p>They reply...</p>
-				<blockquote class="twitter-tweet" data-lang="en">
-					<p lang="en" dir="ltr">
-						<a href="https://twitter.com/Pornhub_ITBot">@Pornhub_ITBot</a> I would like to extend to you an invitation to the pants
-						party. <a href="https://t.co/UwMo3E45IF">pic.twitter.com/UwMo3E45IF</a>
-					</p>
-					&mdash; Andrew Raspberry 2 (@andrewtathampi2) <a href="https://twitter.com/andrewtathampi2/status/697801780999098369">February 11, 2016</a>
-				</blockquote>
-				<p>They tell jokes...</p>
-				<blockquote class="twitter-tweet" data-lang="en">
-					<p lang="en" dir="ltr">The best thing about a Boolean is even if you are wrong, you are only off by a bit.</p>
-					&mdash; Andrew Raspberry 2 (@andrewtathampi2) <a href="https://twitter.com/andrewtathampi2/status/707442171708891137">March 9, 2016</a>
-				</blockquote>
-			</div>
-			<div class="col-sm-4">
-				<p>They have a magic 8 ball that looks like a weird death star...</p>
-				<blockquote class="twitter-tweet" data-lang="en">
-					<p lang="en" dir="ltr">
-						<a href="https://twitter.com/tappedleeds">@tappedleeds</a> <a href="https://twitter.com/ThePurrminator">@ThePurrminator</a>						Don&#39;t count on it <a href="https://twitter.com/hashtag/Magic8Ball?src=hash">#Magic8Ball</a> <a href="https://t.co/96quMwuG96">pic.twitter.com/96quMwuG96</a>
-					</p>
-					&mdash; Andrew Raspberry 2 (@andrewtathampi2) <a href="https://twitter.com/andrewtathampi2/status/698216725540642816">February 12, 2016</a>
-				</blockquote>
-				<p>They chant a mantra of Python Zen...</p>
-				<blockquote class="twitter-tweet" data-lang="en">
-					<p lang="en" dir="ltr">
-						If the implementation is easy to explain, it may be a good idea. <a href="https://twitter.com/hashtag/ZenOfPython?src=hash">#ZenOfPython</a>
-					</p>
-					&mdash; Andrew Raspberry 2 (@andrewtathampi2) <a href="https://twitter.com/andrewtathampi2/status/705800375169843201">March 4, 2016</a>
-				</blockquote>
-			</div>
-			<div class="col-sm-4">
-				<p>They sing songs...</p>
-				<blockquote class="twitter-tweet" data-lang="en">
-					<p lang="tl" dir="ltr">Oppa Gangnam Style</p>
-					&mdash; Andrew Raspberry (@andrewtathampi) <a href="https://twitter.com/andrewtathampi/status/705662741214859264">March 4, 2016</a>
-				</blockquote>
-				<blockquote class="twitter-tweet" data-lang="en">
-					<p lang="en" dir="ltr">HAMMER TIME!</p>
-					&mdash; Andrew Raspberry 2 (@andrewtathampi2) <a href="https://twitter.com/andrewtathampi2/status/693104114318884864">January 29, 2016</a>
-				</blockquote>
-			</div>
-		</div>
-
-		<h2 id="numberwang">Numberwang Bots</h2>
+            <div class="col-md-3">
+                <aside>
+                    <p>If this is not the Andrew Tatham you are looking for, try...</p>
+                    <ul>
+                        <li>Andrew Tatham, Consultant Eye Surgeon: <a href="http://www.drtatham.com/">drtatham.com</a></li>
+                        <li>Andrew Tatham, Artist and Historian: <a href="http://www.groupphoto.co.uk/">groupphoto.co.uk</a> and <a href="http://www.andrewtatham.org.uk/">andrewtatham.org.uk</a></li>
+                    </ul>
+                </aside>
 
 
 
 
 
-		<p class="lead">
-			These bots play Numberwang...
-		</p>
+            </div>
+        </div>
 
-		<div class="row">
-			<div class=" col-sm-6">
-				<ul class="media-list">
-					<li class="media">
+        <div class="page-header">
+            <h1 id="contact">Find me on...</h1>
+        </div>
+        <div class="btn-group">
+            <ul class="list-inline">
+                <li><a class="btn btn-primary" rel="me" href="http://uk.linkedin.com/in/andrewtatham">LinkedIn</a></li>
+                <li><a class="btn btn-primary" rel="me" href="https://www.facebook.com/andrewtatham">Facebook</a></li>
+                <li><a class="btn btn-primary" rel="me" href="https://twitter.com/andrewtatham">Twitter</a></li>
+                <li><a class="btn btn-primary" rel="me" href="https://plus.google.com/+AndrewTatham">Google+</a></li>
+                <li><a class="btn btn-primary" rel="me" href="https://github.com/andrewtatham">Github</a></li>
+                <li><a class="btn btn-primary" rel="me" href="https://www.codeplex.com/site/users/view/andrewtatham">Codeplex</a></li>
+                <li><a class="btn btn-primary" rel="me" href="http://stackoverflow.com/users/352059/andrewtatham">Stack Overflow</a></li>
+            </ul>
+        </div>
 
-						<div class=" media-left media-middle">
-							<a href="https://twitter.com/numberwang_host">
-								<img class="media-object" src="https://pbs.twimg.com/profile_images/698487351123800065/lb9Cc8OS_bigger.jpg">
-							</a>
-						</div>
-						<div class="media-body">
-							<div class="media-heading">
-								<a href="https://twitter.com/numberwang_host">
-									<h4>@numberwang_host</h4>
-								</a>
-							</div>
-							I'm the host of the maths quiz thats simply everyone
-						</div>
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
 
-					</li>
-					<li class="media">
-
-
-						<div class=" media-left media-middle">
-							<a href="https://twitter.com/JulieNumberwang">
-								<img class="media-object" src="https://pbs.twimg.com/profile_images/699132320738103296/XM2coYXl_bigger.jpg">
-							</a>
-						</div>
-						<div class="media-body">
-							<div class="media-heading">
-								<a href="https://twitter.com/JulieNumberwang">
-									<h4>@JulieNumberwang</h4>
-								</a>
-							</div>
-							<ul class="list-unstyled">
-								<li>I am from Somerset</li>
-								<li>I have hobbies</li>
-								<li>I've never killed a man</li>
-							</ul>
+                    <ul class="list-inline">
+                        <li class="pull-right"><a href="#top">Back to top</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
 
-
-						</div>
-
-					</li>
-					<li class="media">
-
-						<div class=" media-left media-middle">
-							<a href="https://twitter.com/SimonNumberwang">
-								<img class="media-object" src="https://pbs.twimg.com/profile_images/699133679805845504/oJx4BKsI_bigger.jpg">
-							</a>
-						</div>
-						<div class="media-body">
-							<div class="media-heading">
-								<a href="https://twitter.com/SimonNumberwang">
-									<h4>@SimonNumberwang</h4>
-								</a>
-							</div>
-							<ul class="list-unstyled">
-								<li>I am from Space</li>
-								<li>I don't have any hobbies</li>
-								<li>I once killed a man</li>
-							</ul>
-
-
-
-						</div>
-
-					</li>
-
-				</ul>
-				<p>
-					If you're not familiar with Numberwang, this video will help...
-				</p>
-				<iframe src="https://www.youtube.com/embed/qjOZtWZ56lc" frameborder="0" allowfullscreen></iframe>
-			</div>
-			<div class="col-sm-6">
-				<img src="images/numberwang.png" />
-
-			</div>
-		</div>
-
-
-		<h2>Other bots...</h2>
-		<div class="row">
-			<div class="col-sm-6">
-				<blockquote class="twitter-tweet" data-lang="en">
-					<p lang="en" dir="ltr">
-						This process, which he termed SHELLf-realization, is not the one-dimensional, narcissistic fulfilment of EGGo trips.
-						<a href="https://t.co/19lpuJA6qz">pic.twitter.com/19lpuJA6qz</a>
-					</p>
-					&mdash; Egg Pun Bot (@eggpunbot) <a href="https://twitter.com/eggpunbot/status/706791299438026752">March 7, 2016</a>
-				</blockquote>
-			</div>
-
-
-			<div class="col-sm-6">
-				<div class="media">
-
-					<div class=" media-left media-middle">
-						<a href="https://twitter.com/eggpunbot">
-							<img class="media-object" src="https://pbs.twimg.com/profile_images/706394624517087232/HRtn2ln6_bigger.jpg">
-						</a>
-					</div>
-					<div class="media-body">
-						<div class="media-heading">
-							<a href="https://twitter.com/eggpunbot">
-								<h4>@eggpunbot</h4>
-							</a>
-						</div>
-						This bot is humanities only attempt to find a universal egg pun algorithm. Eggstraordinary
-						<blockquote class="twitter-tweet" data-lang="en">
-							<p lang="en" dir="ltr"><a href="https://twitter.com/eggpunbot">@eggpunbot</a> It&#39;s a mark of our friendship that I&#39;m following this
-								perversion of technology. <a href="https://twitter.com/hashtag/eggtwat?src=hash">#eggtwat</a></p>&mdash; Jamie (@jami3rez)
-							<a href="https://twitter.com/jami3rez/status/707327590474883073">March 8, 2016</a></blockquote>
-						<blockquote class="twitter-tweet" data-lang="en">
-							<p lang="en" dir="ltr">The best thing to do on a Friday night is chill out with your friends and read <a href="https://twitter.com/eggpunbot">@eggpunbot</a>								tweets <a href="https://twitter.com/hashtag/puns?src=hash">#puns</a> <a href="https://twitter.com/hashtag/eggsonweed?src=hash">#eggsonweed</a>								<a href="https://twitter.com/hashtag/drivesober?src=hash">#drivesober</a></p>&mdash; Eggs on Weed (@dontdrivehigh)
-							<a href="https://twitter.com/dontdrivehigh/status/743963916414365696">June 18, 2016</a></blockquote>
-					</div>
-
-
-				</div>
-
-			</div>
-		</div>
-
-
-		<p>
-			The source code is availiable on <a href="https://github.com/andrewtatham/twitterpibot">Github</a>.
-		</p>
-
-		<div class="page-header">
-			<h1 id="contact">Find me on...</h1>
-		</div>
-		<div class="btn-group">
-			<ul class="list-inline">
-				<li><a class="btn btn-primary" rel="me" href="http://uk.linkedin.com/in/andrewtatham">LinkedIn</a></li>
-				<li><a class="btn btn-primary" rel="me" href="https://www.facebook.com/andrewtatham">Facebook</a></li>
-				<li><a class="btn btn-primary" rel="me" href="https://twitter.com/andrewtatham">Twitter</a></li>
-				<li><a class="btn btn-primary" rel="me" href="https://plus.google.com/+AndrewTatham">Google+</a></li>
-				<li><a class="btn btn-primary" rel="me" href="https://github.com/andrewtatham">Github</a></li>
-				<li><a class="btn btn-primary" rel="me" href="https://www.codeplex.com/site/users/view/andrewtatham">Codeplex</a></li>
-				<li><a class="btn btn-primary" rel="me" href="http://stackoverflow.com/users/352059/andrewtatham">Stack Overflow</a></li>
-			</ul>
-		</div>
-
-		<footer>
-			<div class="row">
-				<div class="col-lg-12">
-
-					<ul class="list-inline">
-						<li class="pull-right"><a href="#top">Back to top</a></li>
-					</ul>
-				</div>
-			</div>
-		</footer>
-
-
-		<script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-			crossorigin="anonymous"></script>
-		<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-		<script src="node_modules/browserify/index.js"></script>
-		<script src="node_modules/angular/angular.min.js"></script>
-		<script src="node_modules/angular/index.js"></script>
-		<script src="js/app.js"></script>
-	</div>
+        <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
+    </div>
 </body>
 
 </html>
