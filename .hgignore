@@ -1,8 +1,0 @@
-syntax: glob
-andrewtatham.v11.suo
-andrewtatham/andrewtatham.csproj.user
-*/bin/*
-*/obj/*
-\.vscode\launch.json
-andrewtatham/public_html/.vscode/
-andrewtatham/public_html/node_modules/

@@ -1,4 +1,4 @@
-﻿function jamesAge() {
+function jamesAge() {
     var from = new Date(2016, 4, 5, 10, 44);
     var to = new Date();
     var age = to - from;
@@ -17,4 +17,10 @@
 function onload() {
     var myVar = setInterval(jamesAge, 1000);
     jamesAge();
+
+    particlesJS.load('particles-js', '/js/particlesjs-config.json', function () {
+        console.log('callback - particles.js config loaded');
+    });
 }
+
+onload();
