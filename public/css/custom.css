@@ -1,9 +1,10 @@
 :root {
     --foo: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
     --bar: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
-  }
-#my-face{
-    position: absolute;
+}
+
+#my-face {
+    position: fixed;
     left: 0px;
     top: 0px;
     width: 100%;
@@ -16,7 +17,7 @@
 }
 
 #particles-js {
-    position: absolute;
+    position: fixed;
     left: 0px;
     top: 0px;
     width: 100%;
@@ -25,8 +26,11 @@
     background: var(--bar);
 }
 
-body, html {
-    height: 100%;
+body,
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
+    line-height: 1.4em;
 }
 
 .gap {
@@ -38,7 +42,7 @@ body, html {
     margin: 1em 0;
 }
 
-.content{
+.content {
     background: var(--foo);
     border-radius: .3rem;
     padding: 1em;
@@ -53,5 +57,3 @@ body, html {
 .btn {
     margin: 1px;
 }
-
-
