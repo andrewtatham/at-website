@@ -18,9 +18,7 @@ function onload() {
     var myVar = setInterval(jamesAge, 1000);
     jamesAge();
 
-    particlesJS.load('particles-js', '/js/particlesjs-config.json', function () {
-        console.log('callback - particles.js config loaded');
-    });
+    particlesJS.load('particles-js', '/js/particlesjs-config.json');
 }
 
 onload();
