@@ -38,6 +38,20 @@ html {
     height: 2em;
 }
 
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fade-in 1s;
+}
+
 .jumbotron {
     background: var(--foo);
     margin: 1em 0;
