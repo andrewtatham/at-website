@@ -1,6 +1,7 @@
 :root {
     --foo: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
     --bar: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+    --box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.5);
 }
 
 #my-face {
@@ -40,20 +41,32 @@ html {
 .jumbotron {
     background: var(--foo);
     margin: 1em 0;
+
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
 }
 
 .content {
     background: var(--foo);
     border-radius: .3rem;
     padding: 1em;
+
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
 }
 
 .footer {
     background: var(--foo);
     border-radius: .3rem;
     padding: 1em;
+
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
 }
 
 .btn {
-    margin: 1px;
+    margin: 0.5em 0.3em;
 }
