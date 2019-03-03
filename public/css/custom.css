@@ -102,3 +102,7 @@ html {
 .btn {
     margin: 0.5em 0.3em;
 }
+
+#random-facts{
+    display: none;
+}
