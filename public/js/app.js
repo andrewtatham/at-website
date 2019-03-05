@@ -15,7 +15,7 @@ function jamesAge() {
 
 function loadRandomFact() {
     var facts = document.getElementsByClassName("fact");
-    var index = Math.floor(Math.random() * facts.length)
+    var index = Math.floor(Math.random() * facts.length);
     document.getElementById("random-fact").innerHTML = facts[index].outerHTML;
 }
 

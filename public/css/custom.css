@@ -52,6 +52,7 @@ html {
     0% {
         opacity: 0;
     }
+
     50% {
         opacity: 0;
     }
@@ -103,6 +104,6 @@ html {
     margin: 0.5em 0.3em;
 }
 
-#random-facts{
+#random-facts {
     display: none;
 }
