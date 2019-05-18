@@ -1,0 +1,122 @@
+:root {
+    --highlight1: rgba(255, 255, 255, 0.6);
+    --highlight2: rgba(255, 255, 255, 0.8);
+    --lowlight1: rgba(0, 0, 0, 0.1);
+    --lowlight2: rgba(0, 0, 0, 0.4);
+    --box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+@mixin light-gradient {
+    background: lightgrey;
+    background: var(--highlight2);
+    background: -webkit-linear-gradient(var(--highlight1), var(--highlight2));
+    background: -ms-linear-gradient(var(--highlight1), var(--highlight2));
+    background: linear-gradient(var(--highlight1), var(--highlight2));
+}
+
+@mixin dark-gradient {
+    background: var(--lowlight1);
+    background: -webkit-linear-gradient(var(--lowlight1), var(--lowlight2));
+    background: -ms-linear-gradient(var(--lowlight1), var(--lowlight2));
+    background: linear-gradient(var(--lowlight1), var(--lowlight2));
+}
+
+@mixin box-shadow {
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
+}
+
+@mixin rounded-corners {
+    border-radius: 0.3rem;
+}
+
+@keyframes fade-in-1 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-2 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@mixin fade-in-1 {
+    animation: fade-in-1 0.5s;
+}
+
+@mixin fade-in-2 {
+    animation: fade-in-2 1s;
+}
+
+#my-face {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-image: url("/img/andrewtatham.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#particles-js {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    @include dark-gradient;
+    @include fade-in-1;
+}
+
+.gap {
+    height: 2em;
+}
+
+.jumbotron {
+    padding: 1em;
+    @include light-gradient;
+    @include box-shadow;
+    @include rounded-corners;
+    @include fade-in-1;
+}
+
+.content {
+    padding: 1em;
+    @include box-shadow;
+    @include light-gradient;
+    @include rounded-corners;
+    @include fade-in-2;
+}
+
+.footer {
+    padding: 1em;
+    @include box-shadow;
+    @include light-gradient;
+    @include rounded-corners;
+    @include fade-in-2;
+}
+
+.btn {
+    color: black;
+    margin: 0.5em 0.3em;
+    @include light-gradient;
+}
