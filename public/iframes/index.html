@@ -1,7 +1,12 @@
 <html>
     <head><title>iframes</title></head>
     <body>
-        <iframe id="iframePayment" name="iframePayment" sandbox="allow-forms allow-scripts allow-top-navigation allow-same-origin" frameborder="0"></iframe>
+        <iframe id="iframePayment" name="iframePayment" sandbox="
+        allow-forms
+        allow-scripts
+        allow-top-navigation
+        allow-same-origin
+        " frameborder="0"></iframe>
         <form id="form" method="GET" action="redirect.html" target="iframePayment">
             <input value="" type="hidden" name="d" id="d"/>
         </form>

@@ -2,5 +2,17 @@
     <head><title>complete</title></head>
     <body>
         <p>complete</p>
-    </body>
+
+        <form id="form" method="GET" action="loansathome://app/--/--/etc?success=true" target="_top">
+        </form>
+
+        <script>
+            (function () {
+                document.getElementById("form").submit();
+            })();
+        </script>
+
+    <a href="loansathome://app/--/--/etc?success=true">deep link success</a>
+    <a href="loansathome://app/--/--/etc?success=false">deep link success</a>
+</body>
 </html>
